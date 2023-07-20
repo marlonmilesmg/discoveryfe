@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Result} from "./result";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'discoveryfe';
-}
+  submittedResults: Result[] = [];
+
+  handleFormSubmit(result: Result) {
+    this.submittedResults.push(result);
+  }
+  }
+

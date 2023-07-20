@@ -1,0 +1,14 @@
+<div>
+  <div class="app-input-form">
+  <h2>Enter Source and Destination</h2>
+  <form (submit)="submitForm()">
+    <label for="source">Source:</label>
+    <input type="text" id="source" [(ngModel)]="source" required>
+
+    <label for="destination">Destination:</label>
+    <input type="text" id="destination" [(ngModel)]="destination" required>
+
+    <button type="submit">Submit</button>
+  </form>
+  </div>
+</div>
